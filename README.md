@@ -1,2 +1,2 @@
-# easy-textsum
-Text summarization using encoder-decoder LSTM with attention mechanism in TensorFlow
+# newsum
+News summarization using encoder-decoder LSTM with attention mechanism in TensorFlow
