@@ -1,2 +1,2 @@
 # newsum
-News summarization using encoder-decoder LSTM with attention mechanism in TensorFlow
+Headline generation using sequence to sequence model in TensorFlow.
