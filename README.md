@@ -1,2 +1,2 @@
-# Headline generation
-Headline generation using sequence to sequence model in TensorFlow.
+# News summarization
+News summarization using sequence to sequence model in TensorFlow.
