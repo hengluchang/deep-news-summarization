@@ -18,3 +18,5 @@ News: The euro hit a record high against the dollar Monday in Asia as concerns o
 Actual headline: Euro hits record high versus dollar in Asian trading
 
 Predicted headline: Euro hits record high against dollar
+
+# How to run
