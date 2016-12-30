@@ -20,7 +20,10 @@ Actual headline: Euro hits record high versus dollar in Asian trading
 Predicted headline: Euro hits record high against dollar
 
 ## How to run
+0. Installed Python, Anaconda and Tensorflow
 1. Create 3 folders named dataset, working_dir, and output. In this repo, I created subfolders as well to store files. 
 ```
 mkdir -p dataset/10yapw working_dir/10yapw-512 output/10yapw-512
 ```
+2. Parse dataset to headline.txt and article.txt and put them under dataset folder. If you are using English Gigaword, you may want to try using beautifulsoup (already in Anaconda) to parse SGML file. 
+3. 
