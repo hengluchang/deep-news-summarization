@@ -36,8 +36,8 @@ $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 ```
 
-- Obtain English Gigaword from university libraries, and use Beautiful Soup 4 (already in Anaconda) to parse SGML file. Generate article.txt with each line as the first sentence of each articles as well as its corresponding headlines to store in headline.txt and put them under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
-- Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec totoal of six files will be generated under ./dataset/10yapw. 
+- Obtain English Gigaword from university libraries, and use Beautiful Soup 4 (already in Anaconda) to parse SGML file. Generate article.txt with each line as the first sentence of each articles as well as its corresponding headlines in headline.txt and put them under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
+- Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be generated under ./dataset/10yapw. 
 ```
 $ python split_data.py
 ```
@@ -72,8 +72,8 @@ $ python execute.py
 
 ## References
 - [Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/): TensorFlow's tutorial using seq2seq_model.py.
-- [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/): I adpoted most of the code from here.
-- [Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/): Benchmarked training step-time using various computing engines. 
+- [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/): I adpoted most of the code from this blog.
+- [Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/): A blog with benchmarked training step-time using various computing engines. 
 - [Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712): A related work in generating news haedlines. 
 - [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo): A great youtube video explaining preplexity. 
 - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): A great blog explaning LSTM. 
