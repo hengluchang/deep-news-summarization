@@ -45,7 +45,7 @@ def main():
     # specify sentence/true headline/predicted headline path.
     sentence_path = './dataset/10yapw/test_enc.txt'
     true_headline_path = "./dataset/10yapw/test_dec.txt"
-    predicted_headline_path = "./output/10yapw-512/predicted_test_headline.txt"
+    predicted_headline_path = "./output/10yapw/predicted_test_headline.txt"
 
     # specify number of lines to read.
     number_of_lines_read = 110000
