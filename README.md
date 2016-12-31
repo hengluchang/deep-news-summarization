@@ -23,14 +23,18 @@ Predicted headline: Euro hits record high against dollar
 ### Pre-req
 0. Install Python, Anaconda and Tensorflow
 1. Download newsum 
+
 ```
 $ git clone https://github.com/hengluchang/newsum.git
 ```
+
 2. Create three folders named dataset, working_dir, and output under the newsum folder. Create subfolders as well to work with different dataset. 
+
 ```
 $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 ```
+
 3. Obtain English Gigaword from university libraries, and use Beautiful Soup 4 (already in Anaconda) to parse SGML file. Generate article.txt with each line as the first sentence of each articles as well as its corresponding headlines to store in headline.txt and put them under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
 4. Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec totoal of six files will be generated under ./dataset/10yapw. 
 ```
@@ -47,6 +51,7 @@ $ python execute.py
 ### Testing
 1. Set "mode = test" in seq2seq.ini file. 
 2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and generate predicted_test_headline.txt under ./output/10yapw. 
+
 ```
 $ python execute.py
 ```
