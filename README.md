@@ -48,14 +48,14 @@ $ python execute.py
 
 ### Testing
 1. Set "mode = test" in seq2seq.ini file. 
-2. Run execute.py. This will read the model parameters and generate predicted_test_headline.txt under ./output/10yapw. 
+2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and generate predicted_test_headline.txt under ./output/10yapw. 
 ```
 $ python execute.py
 ```
 
 ### Interactive testing
 1. Set "mode = interactive" in seq2seq.ini file.
-2. Run execute.py. This will read the model parameters and ask user for an input. 
+2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and ask user for an input. 
 ```
 $ python execute.py
 ```
