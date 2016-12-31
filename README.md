@@ -2,7 +2,7 @@
 News summarization using sequence to sequence model in TensorFlow.
 
 ## Introduction
-This repository is a demonstration of abstractive summarization of news article exploiting Tensorflow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/) with attention mechanism using [LSTM cell](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) as both encoder and decoder.
+This repository is a demonstration of abstractive summarization of news article exploiting TensorFlow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/) with attention mechanism using [LSTM cell](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) as both encoder and decoder.
 ![image](https://github.com/hengluchang/newsum/blob/master/encoder-decoder_LSTM_attention.png)
 This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from English Gigaword second edition. The examples below were the results based on the model trained using AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
@@ -24,7 +24,7 @@ Predicted headline: Euro hits record high against dollar
 
 ## How to run
 ### Pre-req
-- Install Python, Anaconda and Tensorflow
+- Install Python, Anaconda and TensorFlow
 - Download newsum 
 ```
 $ git clone https://github.com/hengluchang/newsum.git
@@ -71,9 +71,9 @@ $ python execute.py
 ```
 
 ## References
-- [Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/)
-- [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
-- [Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/)
-- [Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712)
-- [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo)
-- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+- [Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/): TensorFlow's tutorial using seq2seq_model.py.
+- [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/): I adpoted most of the code from here.
+- [Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/): Benchmarked training step-time using various computing engines. 
+- [Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712): A related work in generating news haedlines. 
+- [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo): A great youtube video explaining preplexity. 
+- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): A great blog explaning LSTM. 
