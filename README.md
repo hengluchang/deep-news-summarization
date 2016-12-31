@@ -2,7 +2,7 @@
 News summarization using sequence to sequence model in TensorFlow.
 
 ## Introduction
-This repo is a demonstration of abstractive summarization of news article exploiting Tensorflow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/). This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from English gigaword second edition. The examples below were the results based on the model trained using AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
+This repo is a demonstration of abstractive summarization of news article exploiting Tensorflow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/). This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from English Gigaword second edition. The examples below were the results based on the model trained using AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
 ## Examples
 ### [News 1](https://www.highbeam.com/doc/1A1-D8SKOI7O0.html)
@@ -33,12 +33,30 @@ $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 ```
 
-3. Obtain English Gigaword, and use beautifulsoup4 (already in Anaconda) to parse SGML file. Generate article.txt with each line as the first sentence of each articles as well as its corresponding headlines to store in headline.txt and put them under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
+3. Obtain English Gigaword from university libraries, and use beautifulsoup4 (already in Anaconda) to parse SGML file. Generate article.txt with each line as the first sentence of each articles as well as its corresponding headlines to store in headline.txt and put them under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
 4. Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec totoal of six files will be generated under ./dataset/10yapw. 
 ```
 $ python split_data.py
 ```
 
 ### Training
-1. 
+1. Set "mode = train" in seq2seq.ini file. 
+2. Run execute.py. This will generate vocab80000_enc.txt, vocab800000_dec.txt, and checkpoint data under ./working_dir/10yapw. If you use your own dataset, optimizing bucket sizes and numbers to minimize padding in execute.py file will give you better results. Also, keep training the model until the preplexity of the evaluation sets are under 10.  
+```
+$ python execute.py
+```
+
+### Testing
+1. Set "mode = test" in seq2seq.ini file. 
+2. Run execute.py. This will read the model parameters and generate predicted_test_headline.txt under ./output/10yapw. 
+```
+$ python execute.py
+```
+
+### Interactive testing
+1. Set "mode = interactive" in seq2seq.ini file.
+2. Run execute.py. This will read the model parameters and ask user for an input. 
+```
+$ python execute.py
+```
 
