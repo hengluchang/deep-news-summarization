@@ -20,13 +20,14 @@ Actual headline: Euro hits record high versus dollar in Asian trading
 Predicted headline: Euro hits record high against dollar
 
 ## How to run
+### Pre-req
 0. Install Python, Anaconda and Tensorflow
 1. Download newsum 
 ```
 $ git clone https://github.com/hengluchang/newsum.git
 ```
 
-2. Create 3 folders named dataset, working_dir, and output under the newsum folder. Create subfolders as well to work with different dataset. 
+2. Create three folders named dataset, working_dir, and output under the newsum folder. Create subfolders as well to work with different dataset. 
 ```
 $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
@@ -38,5 +39,6 @@ $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 $ python split_data.py
 ```
 
-5. 
+### Training
+1. 
 
