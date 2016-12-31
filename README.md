@@ -75,5 +75,5 @@ $ python execute.py
 - [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/): I adpoted most of the code from this blog.
 - [Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/): A blog with benchmarked training step-time using various computing engines. 
 - [Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712): A related work in generating news haedlines. 
-- [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo): A great youtube video explaining preplexity. 
-- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): A great blog explaning LSTM. 
+- [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo): A youtube video explaining preplexity. 
+- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): A blog explaning LSTM. 
