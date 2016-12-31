@@ -21,7 +21,6 @@ Predicted headline: Euro hits record high against dollar
 
 ## How to run
 ### Pre-req
----
 0. Install Python, Anaconda and Tensorflow
 1. Download newsum 
 ```
@@ -41,7 +40,6 @@ $ python split_data.py
 ```
 
 ### Training
----
 1. Set "mode = train" in seq2seq.ini file. 
 2. Run execute.py. This will generate vocab80000_enc.txt, vocab800000_dec.txt, and checkpoint data under ./working_dir/10yapw. If you use your own dataset, optimizing bucket sizes and numbers to minimize padding in execute.py file will give you better results. Also, keep training the model until the preplexity of the evaluation sets are under 10.  
 ```
@@ -49,7 +47,6 @@ $ python execute.py
 ```
 
 ### Testing
----
 1. Set "mode = test" in seq2seq.ini file. 
 2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and generate predicted_test_headline.txt under ./output/10yapw. 
 ```
@@ -63,7 +60,6 @@ $ python evaluation.py
 
 
 ### Interactive testing
----
 1. Set "mode = interactive" in seq2seq.ini file.
 2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and ask user for an input. 
 ```
@@ -71,8 +67,8 @@ $ python execute.py
 ```
 
 ## References
--[Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/)
--[Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
--[Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/)
--[Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712)
--[Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo)
+- [Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/)
+- [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
+- [Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/)
+- [Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712)
+- [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo)
