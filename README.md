@@ -36,7 +36,7 @@ $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 ```
 
-- You can obtain English Gigaword from university libraries and use Beautiful Soup 4 (already in Anaconda) to parse SGML file. Generate article.txt with each line as the first sentence of each articles as well as its corresponding headlines in headline.txt and put them under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
+- You can obtain English Gigaword from university libraries and use Beautiful Soup 4 (already in Anaconda) to parse SGML file. Every line in article.txt is the first sentence of each news article; every line in headline.txt is the headline of that news article. Put atricle.txt and headline.txt under ./dataset/10yapw. You can use your own dataset as well for article.txt and headline.txt. 
 - Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be generated under ./dataset/10yapw. 
 ```
 $ python split_data.py
