@@ -24,7 +24,7 @@ Predicted headline: Euro hits record high against dollar
 
 ## How to run
 ### Pre-req
-- Install Python, Anaconda and TensorFlow
+- Install Python, Anaconda, and TensorFlow
 - Download newsum 
 ```
 $ git clone https://github.com/hengluchang/newsum.git
