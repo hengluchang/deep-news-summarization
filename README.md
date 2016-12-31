@@ -11,6 +11,7 @@ News: A roadside bomb killed five people Thursday near a shelter used as a polic
 Actual headline: Iraqi police: Bomb kills 5 near police recruiting center in northeast Baghdad
 
 Predicted headline: URGENT Explosion kills five people in Baghdad
+======================================
 
 ### [News 2](https://www.highbeam.com/doc/1A1-D8SNBQJ83.html)
 News: The euro hit a record high against the dollar Monday in Asia as concerns over the U.S. subprime mortgage crisis remain a heavy weight on the greenback.
@@ -21,6 +22,8 @@ Predicted headline: Euro hits record high against dollar
 
 ## How to run
 ### Pre-req
+======================================
+
 0. Install Python, Anaconda and Tensorflow
 1. Download newsum 
 
@@ -42,6 +45,8 @@ $ python split_data.py
 ```
 
 ### Training
+======================================
+
 1. Set "mode = train" in seq2seq.ini file. 
 2. Run execute.py. This will generate vocab80000_enc.txt, vocab800000_dec.txt, and checkpoint data under ./working_dir/10yapw. If you use your own dataset, optimizing bucket sizes and numbers to minimize padding in execute.py file will give you better results. Also, keep training the model until the preplexity of the evaluation sets are under 10.  
 ```
@@ -49,6 +54,8 @@ $ python execute.py
 ```
 
 ### Testing
+======================================
+
 1. Set "mode = test" in seq2seq.ini file. 
 2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and generate predicted_test_headline.txt under ./output/10yapw. 
 
@@ -63,6 +70,8 @@ $ python evaluation.py
 
 
 ### Interactive testing
+======================================
+
 1. Set "mode = interactive" in seq2seq.ini file.
 2. Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and ask user for an input. 
 ```
