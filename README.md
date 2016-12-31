@@ -26,9 +26,10 @@ Predicted headline: Euro hits record high against dollar
 $ git clone https://github.com/hengluchang/newsum.git
 ```
 
-2. Create 3 folders named dataset, working_dir, and output under newsum folder. In this repo, I created subfolders as well to store files. 
+2. Create 3 folders named dataset, working_dir, and output under the newsum folder. Create subfolders as well to work with different dataset. 
 ```
-$ mkdir -p dataset/10yapw working_dir/10yapw-512 output/10yapw-512
+$ cd newsum
+$ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 ```
 
 3. Obtain headline.txt and article.txt and put them under dataset folder. If you are using English Gigaword, you may want to try using beautifulsoup (already in Anaconda) to parse SGML file. 
