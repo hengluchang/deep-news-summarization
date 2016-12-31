@@ -2,7 +2,7 @@
 News summarization using sequence to sequence model in TensorFlow.
 
 ## Introduction
-This repo is a demonstration of abstractive summarization of news article exploiting Tensorflow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/). This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from English gigaword second edition. The examples below were the results of the model trained using AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
+This repo is a demonstration of abstractive summarization of news article exploiting Tensorflow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/). This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from English gigaword second edition. The examples below were the results based on the model trained using AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
 ## Examples
 ### [News 1](https://www.highbeam.com/doc/1A1-D8SKOI7O0.html)
