@@ -4,7 +4,7 @@ News summarization using sequence to sequence model in TensorFlow.
 ## Introduction
 This repository is a demonstration of abstractive summarization of news article exploiting TensorFlow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/) with attention mechanism using [LSTM cell](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) as both encoder and decoder.
 ![image](https://github.com/hengluchang/newsum/blob/master/encoder-decoder_LSTM_attention.png)
-This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from [English Gigaword second edition](https://catalog.ldc.upenn.edu/LDC2005T12). The examples below were the results based on the model trained using AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
+This model is trainined on 1994-2004 Associated Press Worldstream (APW) newswires from [English Gigaword second edition](https://catalog.ldc.upenn.edu/LDC2005T12). The examples below were based on the model trained on AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
 ## Examples
 ### [News 1](https://www.highbeam.com/doc/1A1-D8SKOI7O0.html)
@@ -30,7 +30,7 @@ Predicted headline: Euro hits record high against dollar
 $ git clone https://github.com/hengluchang/newsum.git
 ```
 
-- Create three folders named dataset, working_dir, and output under the newsum folder. Create subfolders as well to work with different dataset. 
+- Create three folders named dataset, working_dir, and output under the newsum folder. You can create subfolders as well to work with different dataset. 
 ```
 $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
@@ -44,7 +44,7 @@ $ python split_data.py
 
 ### Training
 - Set "mode = train" in seq2seq.ini file. 
-- Run execute.py. This will generate vocab80000_enc.txt, vocab800000_dec.txt, and checkpoint data under ./working_dir/10yapw. If you use your own dataset, optimizing bucket sizes and numbers to minimize padding in execute.py file will give you better results. Also, keep training the model until the preplexity of the evaluation sets are under 10.  
+- Run execute.py. This will generate vocab80000_enc.txt, vocab80000_dec.txt, and checkpoint data under ./working_dir/10yapw. If you use your own dataset, optimizing bucket sizes to minimize padding in execute.py file will give you better results. Also, keep training the model until the [preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo) of the evaluation sets are under 10.  
 ```
 $ python execute.py
 ```
@@ -57,7 +57,7 @@ $ python execute.py
 $ python execute.py
 ```
 
-- Run evaluation.py to get BLEU scores between actual headlines and predicted headlines. 
+- Run evaluation.py to get [BLEU](https://en.wikipedia.org/wiki/BLEU) scores between actual headlines and predicted headlines. 
 ```
 $ python evaluation.py
 ```
