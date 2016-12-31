@@ -59,4 +59,9 @@ $ python execute.py
 ```
 $ python execute.py
 ```
-![example](https://github.com/hengluchang/newsum/blob/master/newsum_interactive_example.png)
+
+## References
+[Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/)
+[Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
+[Speakeasy chatbot](http://lauragelston.ghost.io/speakeasy/)
+
