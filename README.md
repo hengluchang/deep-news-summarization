@@ -59,4 +59,4 @@ $ python execute.py
 ```
 $ python execute.py
 ```
-
+![example](https://github.com/hengluchang/newsum/blob/master/newsum_interactive_example.png)
