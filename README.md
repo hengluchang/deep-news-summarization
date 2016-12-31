@@ -32,5 +32,5 @@ $ cd newsum
 $ mkdir -p dataset/10yapw working_dir/10yapw output/10yapw
 ```
 
-3. Obtain headline.txt and article.txt and put them under dataset folder. If you are using English Gigaword, you may want to try using beautifulsoup (already in Anaconda) to parse SGML file. 
+3. Obtain headline.txt and article.txt and put them under ./dataset/10yapw. If you are using English Gigaword, you may need to try using beautifulsoup (already in Anaconda) to parse SGML file first. 
 4. Run 
