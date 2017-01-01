@@ -24,7 +24,7 @@ import sys
 import time
 
 import numpy as np
-#from six.moves import xrange  # pylint: disable=redefined-builtin
+# from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
 import data_utils
@@ -44,12 +44,8 @@ def get_config(config_file='seq2seq.ini'):
     return dict(_conf_ints + _conf_floats + _conf_strings)
 
 # We use a number of buckets and pad to the closest one for efficiency.
-# See seq2seq_model.Seq2SeqModel for details of how they work.
-# _buckets = [(50, 12), (70, 12), (100, 15)] # 1m nyt v1
-# _buckets = [(40, 15), (60, 15), (80, 15)] # 1m nyt v2
-# _buckets = [(35, 8), (70, 8), (35, 13), (70, 13)] # 4y nyt
-# _buckets = [(40, 10), (60, 10), (40, 15), (60, 15)] # 2m apw
-_buckets = [(30, 10), (30, 20), (40, 10), (40, 20), (50, 20)]  # 10y apw
+# Change bucket sizes and numbers if you use your own dataset. 
+_buckets = [(30, 10), (30, 20), (40, 10), (40, 20), (50, 20)]  
 
 def read_data(source_path, target_path, max_size=None):
   """Read data from source and target files and put into buckets.
@@ -226,7 +222,7 @@ def decode():
                 # Write predicted headline corresponding to article.
                 predicted_headline.write(" ".join([tf.compat.as_str(rev_dec_vocab[output]) for output in outputs])+'\n')
                 sentence_count += 1
-                if sentence_count % 10000 == 0:
+                if sentence_count % 100 == 0:
                     print("predicted data line %d" % sentence_count)
                     sys.stdout.flush()
 
