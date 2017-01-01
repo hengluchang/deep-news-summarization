@@ -23,7 +23,7 @@ Actual headline: Euro hits record high versus dollar in Asian trading
 Predicted headline: Euro hits record high against dollar
 
 ## How to run
-For demonstration, we use the sample file (a very small portion of English Gigaword) from LDC as our dataset. If you want to reproduce the results like the above examples, larger datset is necessary. You can obtain the whole English Gigaword from university libraries.
+For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset. If you want to reproduce the results like the above examples, larger datset is necessary. You can obtain the whole English Gigaword from university libraries.
 ### Pre-req
 - Install Python, Anaconda, and TensorFlow
 - Download newsum 
@@ -37,7 +37,7 @@ $ cd newsum
 $ mkdir -p working_dir output
 ```
 
-- Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be generated under ./dataset. 
+- Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be created under ./dataset. 
 ```
 $ python split_data.py
 ```
