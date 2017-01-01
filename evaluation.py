@@ -30,7 +30,7 @@ def getBLEUscore(true_headline, predicted_headline):
         BLEUscore.append(nltk.translate.bleu_score.sentence_bleu
                          ([token_true_headline[id]], token_predicted_headline[id], weights=weights))
         count += 1
-        if count % 10000 == 0:
+        if count % 100 == 0:
             print ("Calculating BLEU for sentence %d" %count)
 
     avgBLEUscore = sum(BLEUscore)/total_predicted_headline
@@ -43,15 +43,15 @@ def main():
     pd.set_option('display.width', desired_width)
 
     # specify sentence/true headline/predicted headline path.
-    sentence_path = './dataset/10yapw/test_enc.txt'
-    true_headline_path = "./dataset/10yapw/test_dec.txt"
-    predicted_headline_path = "./output/10yapw/predicted_test_headline.txt"
+    sentence_path = './dataset/test_enc.txt'
+    true_headline_path = "./dataset/test_dec.txt"
+    predicted_headline_path = "./output/predicted_test_headline.txt"
 
     # specify number of lines to read.
-    number_of_lines_read = 110000
+    number_of_lines_read = 400
 
     with open(true_headline_path) as ft:
-        print("reading true headlines...")
+        print("reading actual headlines...")
         true_headline = [next(ft).strip() for line in range(number_of_lines_read)]
     ft.close()
 
@@ -83,8 +83,8 @@ def main():
     df_sortBLEU = df.sort_values('BLEU score', ascending=False)
     print(df_sortBLEU)
 
-    # Store the top 10000 predicted headline in terms of BLEU score
-    df_sortBLEU.head(10000).to_csv('sortBLEU_512_10epoch.txt', sep='\n', index=False,
+    # Store the top 100 predicted headline in terms of BLEU score
+    df_sortBLEU.head(100).to_csv('BLEU.txt', sep='\n', index=False,
                        line_terminator='\n-------------------------------------------------\n')
     print("Finished generating results summary!")
 
