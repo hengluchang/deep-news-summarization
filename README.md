@@ -37,27 +37,27 @@ $ cd newsum
 $ mkdir -p working_dir output
 ```
 
-- Run split_data.py to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be created under ./dataset. 
+- Run split_data.py file to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be created under ./dataset. 
 ```
 $ python split_data.py
 ```
 
 ### Training
 - Set "mode = train" in seq2seq.ini file. 
-- Run execute.py. This will create vocab80000_enc.txt, vocab80000_dec.txt, and checkpoint data under ./working_dir. If you use your own dataset, optimizing bucket sizes to minimize padding in execute.py file will give you better results. Also, keep training the model until the [preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo) of the evaluation sets are under 10.  
+- Run execute.py file. This will create vocab80000_enc.txt, vocab80000_dec.txt, and checkpoint data under ./working_dir. If you use your own dataset, optimizing bucket sizes to minimize padding in execute.py file can help. Also, keep training the model until the [preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo) of the evaluation sets are under 10 for better results.  
 ```
 $ python execute.py
 ```
 
 ### Testing
 - Set "mode = test" in seq2seq.ini file. 
-- Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and create predicted_test_headline.txt under ./output. 
+- Run execute.py file. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and create predicted_test_headline.txt under ./output. 
 
 ```
 $ python execute.py
 ```
 
-- Run evaluation.py to get [BLEU](https://en.wikipedia.org/wiki/BLEU) scores between actual headlines and predicted headlines. This will create BLEU.txt. 
+- Run evaluation.py file to get [BLEU](https://en.wikipedia.org/wiki/BLEU) scores between actual headlines and predicted headlines. This will create BLEU.txt. 
 ```
 $ python evaluation.py
 ```
