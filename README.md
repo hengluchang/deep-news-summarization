@@ -44,7 +44,7 @@ $ python split_data.py
 
 ### Training
 - Set "mode = train" in seq2seq.ini file. 
-- Run execute.py file. This will create vocab80000_enc.txt, vocab80000_dec.txt, and checkpoint data under ./working_dir. If you use your own dataset, optimizing bucket sizes to minimize padding in execute.py file can help. Also, keep training the model until the [preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo) of the evaluation sets are under 10 for better results.  
+- Run execute.py file. This will create vocab40000_enc.txt, vocab40000_dec.txt, and checkpoint data under ./working_dir. If you use your own dataset, optimizing bucket sizes to minimize padding in execute.py file can help to get better results. Also, keep training the model until the [preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo) of the evaluation sets are under 10 for better performances.  
 ```
 $ python execute.py
 ```
