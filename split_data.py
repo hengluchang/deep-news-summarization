@@ -22,32 +22,32 @@ def split_dataset(path):
 def write_dataset(dec_train, dec_eval, dec_test, enc_train, enc_eval, enc_test):
 
     # create and write training, evaluation, and testing encoding/decoding files.
-    with open('./dataset/10yapw/train_enc.txt', 'w') as train_enc:
+    with open('./dataset/train_enc.txt', 'w') as train_enc:
         for line in enc_train:
             train_enc.write(line+'\n')
     train_enc.close()
 
-    with open('./dataset/10yapw/eval_enc.txt', 'w') as eval_enc:
+    with open('./dataset/eval_enc.txt', 'w') as eval_enc:
         for line in enc_eval:
             eval_enc.write(line+'\n')
     eval_enc.close()
 
-    with open('./dataset/10yapw/test_enc.txt', 'w') as test_enc:
+    with open('./dataset/test_enc.txt', 'w') as test_enc:
         for line in enc_test:
             test_enc.write(line+'\n')
     test_enc.close()
 
-    with open('./dataset/10yapw/train_dec.txt', 'w') as train_dec:
+    with open('./dataset/train_dec.txt', 'w') as train_dec:
         for line in dec_train:
             train_dec.write(line + '\n')
     train_dec.close()
 
-    with open('./dataset/10yapw/eval_dec.txt', 'w') as eval_dec:
+    with open('./dataset/eval_dec.txt', 'w') as eval_dec:
         for line in dec_eval:
             eval_dec.write(line + '\n')
     eval_dec.close()
 
-    with open('./dataset/10yapw/test_dec.txt', 'w') as test_dec:
+    with open('./dataset/test_dec.txt', 'w') as test_dec:
         for line in dec_test:
             test_dec.write(line + '\n')
     test_dec.close()
@@ -68,8 +68,8 @@ def main():
     # decode('./dataset/10yapw/article.txt', './dataset/10yapw/u_article.txt')
 
     # specify headline/article path here
-    headline_datapath = './dataset/10yapw/headline.txt'
-    article_datapath = './dataset/10yapw/article.txt'
+    headline_datapath = './dataset/headline.txt'
+    article_datapath = './dataset/article.txt'
     dec_train, dec_eval, dec_test = split_dataset(headline_datapath)
     enc_train, enc_eval, enc_test = split_dataset(article_datapath)
 
