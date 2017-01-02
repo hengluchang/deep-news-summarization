@@ -81,12 +81,13 @@ def main():
     # pd.set_option('max_colwidth', 80)
     df = pd.DataFrame(data=summary, columns=['BLEU score', 'Predicted headline', 'True headline', 'article'])
     df_sortBLEU = df.sort_values('BLEU score', ascending=False)
-    print(df_sortBLEU)
+    # print(df_sortBLEU)
 
     # Store the top 100 predicted headline in terms of BLEU score
-    df_sortBLEU.head(100).to_csv('BLEU.txt', sep='\n', index=False,
+    output_file = 'BLEU.txt'
+    df_sortBLEU.head(100).to_csv(output_file, sep='\n', index=False,
                        line_terminator='\n-------------------------------------------------\n')
-    print("Finished generating results summary!")
+    print("Finished generating results summary in %s!" %output_file)
 
 if __name__ == "__main__":
     main()
