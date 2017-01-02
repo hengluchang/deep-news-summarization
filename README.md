@@ -23,7 +23,8 @@ Actual headline: Euro hits record high versus dollar in Asian trading
 Predicted headline: Euro hits record high against dollar
 
 ## How to run
-For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset. If you want to reproduce the results like the above examples, larger datset is necessary. You can obtain the whole English Gigaword from university libraries.
+For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset. If you want to reproduce the results like the above examples, larger datset is necessary. You can obtain the whole English Gigaword from university libraries. 
+
 ### Pre-req
 - Install Python, Anaconda, and TensorFlow
 - Download newsum 
