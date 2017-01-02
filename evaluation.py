@@ -87,7 +87,7 @@ def main():
     output_file = 'BLEU.txt'
     df_sortBLEU.head(100).to_csv(output_file, sep='\n', index=False,
                        line_terminator='\n-------------------------------------------------\n')
-    print("Finished generating results summary in %s!" %output_file)
+    print("Finished creating results summary in %s!" %output_file)
 
 if __name__ == "__main__":
     main()
