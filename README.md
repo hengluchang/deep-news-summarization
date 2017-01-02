@@ -58,7 +58,7 @@ $ python execute.py
 $ python execute.py
 ```
 
-- Run evaluation.py file to get [BLEU](https://en.wikipedia.org/wiki/BLEU) scores between actual headlines and predicted headlines. This will create BLEU.txt. 
+- Run evaluation.py file to get [BLEU](https://en.wikipedia.org/wiki/BLEU) scores between actual headlines and predicted headlines. This will create BLEU.txt file. 
 ```
 $ python evaluation.py
 ```
