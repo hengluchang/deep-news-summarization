@@ -7,14 +7,14 @@ This repository is a demonstration of abstractive summarization of news article 
 This model is trained on one million Associated Press Worldstream news stories from [English Gigaword second edition](https://catalog.ldc.upenn.edu/LDC2005T12). The examples below are based on the model trained on AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
 ## Examples
-### [News 1](https://www.highbeam.com/doc/1A1-D8SKOI7O0.html)
+### [News 1](https://www.highbeam.com/doc/1A1-D8SKOI7O0.html) 
 News: A roadside bomb killed five people Thursday near a shelter used as a police recruiting center in northeast Baghdad, police said.
 
 Actual headline: Iraqi police: Bomb kills 5 near police recruiting center in northeast Baghdad
 
 Predicted headline: URGENT Explosion kills five people in Baghdad
 
-### [News 2](https://www.highbeam.com/doc/1A1-D8SNBQJ83.html)
+### [News 2](https://www.highbeam.com/doc/1A1-D8SNBQJ83.html) 
 News: The euro hit a record high against the dollar Monday in Asia as concerns over the U.S. subprime mortgage crisis remain a heavy weight on the greenback.
 
 Actual headline: Euro hits record high versus dollar in Asian trading
