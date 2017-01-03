@@ -14,7 +14,6 @@ Actual headline: Iraqi police: Bomb kills 5 near police recruiting center in nor
 
 Predicted headline: URGENT Explosion kills five people in Baghdad
 
-======================================
 ### [News 2](https://www.highbeam.com/doc/1A1-D8SNBQJ83.html)
 News: The euro hit a record high against the dollar Monday in Asia as concerns over the U.S. subprime mortgage crisis remain a heavy weight on the greenback.
 
@@ -28,17 +27,20 @@ For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/a
 ### Pre-req
 - Install Python, Anaconda, and TensorFlow
 - Download newsum 
+
 ```
 $ git clone https://github.com/hengluchang/newsum.git
 ```
 
 - Create two folders named "working_dir" and "output" under the newsum folder. 
+
 ```
 $ cd newsum
 $ mkdir -p working_dir output
 ```
 
 - Run split_data.py file to split the dataset into training, evaluation, and testing sets. train_enc.txt, eval_enc.txt, test_enc, train_dec.txt, eval_dec.txt, and test_dec.txt total of six files will be created under ./dataset. 
+
 ```
 $ python split_data.py
 ```
@@ -46,6 +48,7 @@ $ python split_data.py
 ### Training
 - Set "mode = train" in seq2seq.ini file. 
 - Run execute.py file. This will create vocab40000_enc.txt, vocab40000_dec.txt, and checkpoint data under ./working_dir. If you use your own dataset, optimizing bucket sizes to minimize padding in execute.py file can help to get better results. Also, keep training the model until the [preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo) of the evaluation sets are under 10 for better performances.  
+
 ```
 $ python execute.py
 ```
@@ -59,6 +62,7 @@ $ python execute.py
 ```
 
 - Run evaluation.py file to get [BLEU](https://en.wikipedia.org/wiki/BLEU) scores between actual headlines and predicted headlines. This will create BLEU.txt file. 
+
 ```
 $ python evaluation.py
 ```
@@ -67,6 +71,7 @@ $ python evaluation.py
 ### Interactive testing
 - Set "mode = interactive" in seq2seq.ini file.
 - Run execute.py. This will read the model parameters (seq2seq.ckpt-XXXXX) into your model and ask user for an input. 
+
 ```
 $ python execute.py
 ```
