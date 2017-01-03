@@ -32,7 +32,7 @@ For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/a
 $ git clone https://github.com/hengluchang/newsum.git
 ```
 
-- Create two folders named "working_dir" and "output" under the newsum folder. 
+- Create two folders named "working_dir" and "output" under the newsum folder.
 
 ```
 $ cd newsum
