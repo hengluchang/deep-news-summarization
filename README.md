@@ -3,7 +3,7 @@ News summarization using sequence to sequence model in TensorFlow.
 
 ## Introduction
 This repository is a demonstration of abstractive summarization of news article exploiting TensorFlow [sequence to sequence model](https://www.tensorflow.org/tutorials/seq2seq/). This model incorporates attention mechanism and uses [LSTM cell](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) as both encoder and decoder.
-![](https://github.com/hengluchang/newsum/blob/master/encoder-decoder-LSTM-attention.PNG)
+![](https://github.com/hengluchang/newsum/blob/master/encoderDecoderLSTMAttention.PNG)
 This model is trained on one million Associated Press Worldstream news stories from [English Gigaword second edition](https://catalog.ldc.upenn.edu/LDC2005T12). The examples below are based on the model trained on AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
 ## Examples
