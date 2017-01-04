@@ -9,6 +9,7 @@ This repository is a demonstration of abstractive summarization of news article 
 This model is trained on one million Associated Press Worldstream news stories from [English Gigaword second edition](https://catalog.ldc.upenn.edu/LDC2005T12). The examples below are based on the model trained on AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
 ## Examples
+
 ### [News 1](https://www.highbeam.com/doc/1A1-D8SKOI7O0.html) 
 News: A roadside bomb killed five people Thursday near a shelter used as a police recruiting center in northeast Baghdad, police said.
 
