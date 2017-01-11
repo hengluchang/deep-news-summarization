@@ -28,7 +28,7 @@ Predicted headline: Euro hits record high against dollar
 For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset. If you want to reproduce the results like the above examples, larger datset is necessary. You can obtain the whole English Gigaword from university libraries. 
 
 ### Pre-req
-- Install Python, Anaconda, and TensorFlow
+- Install Python 3.5, Anaconda (using pandas, Numpy and nltk only), and TensorFlow
 - Download newsum 
 
 ```
