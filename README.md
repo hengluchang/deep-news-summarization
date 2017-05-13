@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8561a549b3d44399811d008c328aa738)](https://www.codacy.com/app/hengluchang/newsum?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hengluchang/newsum&amp;utm_campaign=Badge_Grade)
+
 ## News summarization
 News summarization using sequence to sequence model in TensorFlow.
 
