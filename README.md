@@ -10,7 +10,7 @@ This repository is a demonstration of abstractive summarization of news article 
 
 This model is trained on one million Associated Press Worldstream news stories from [English Gigaword second edition](https://catalog.ldc.upenn.edu/LDC2005T12). The examples below are based on the model trained on AWS EC2 g2.2xlarge instance for 10 epochs, which took around 20 hours. 
 
-For more detail information, please see our project research paper [Headline Generation Using Recurrent Neural Network](https://github.com/hengluchang/newsum/blob/master/headline-generation-recurrent.pdf). 
+For more detail information, please see our project research paper: [Headline Generation Using Recurrent Neural Network](https://github.com/hengluchang/newsum/blob/master/headline-generation-recurrent.pdf). 
 
 ## Examples
 
