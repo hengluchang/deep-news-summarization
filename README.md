@@ -36,7 +36,7 @@ For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/a
 - Download newsum 
 
 ```
-$ git clone https://github.com/hengluchang/newsum.git
+$ git clone https://github.com/hengluchang/deep-news-summarization.git
 ```
 
 - Create two folders named "working_dir" and "output" under the newsum folder.
