@@ -42,7 +42,7 @@ $ git clone https://github.com/hengluchang/deep-news-summarization.git
 - Create two folders named "working_dir" and "output" under the newsum folder.
 
 ```
-$ cd newsum
+$ cd deep-news-summarization
 $ mkdir -p working_dir output
 ```
 
