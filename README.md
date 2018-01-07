@@ -32,13 +32,14 @@ Predicted headline: Euro hits record high against dollar
 For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset. If you want to reproduce the results like the above examples, larger training set is necessary. You can obtain the whole English Gigaword from university libraries.
 
 ### Pre-req
+- Install Python3
 - Download newsum
 
 ```
 $ git clone https://github.com/hengluchang/deep-news-summarization.git
 ```
 
-- Install Python 3, TensorFlow 0.12, pandas, Numpy, nltk, and requests
+- Install TensorFlow 0.12, pandas, Numpy, nltk, and requests
 ```
 $ pip install -r requirements.txt
 ```
