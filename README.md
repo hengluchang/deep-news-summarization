@@ -29,7 +29,7 @@ Actual headline: Euro hits record high versus dollar in Asian trading
 Predicted headline: Euro hits record high against dollar
 
 ## How to run
-For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset to train our model. If you want to reproduce the results like the above examples, larger training set is necessary.  You can download the trained model parameters which was trained on a larger portion on Gigaword by following the instructions in the *Download vocabs and trained model parameters* section below. The whole English Gigaword can be obtaimed from university libraries.
+For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/addenda/LDC2003T05.gz) (a very small portion of English Gigaword) from LDC as our dataset to train our model. If you want to reproduce the results like the above examples, larger training set is necessary.  You can download the trained model parameters which was trained on a larger portion on Gigaword by following the instructions in the *Download vocabs and trained model parameters* section below. The whole English Gigaword can be obtained from university libraries.
 
 ### Pre-req
 - Install Python 3
