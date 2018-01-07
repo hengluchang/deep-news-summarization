@@ -33,7 +33,7 @@ For demonstration, we use the [sample file](https://catalog.ldc.upenn.edu/desc/a
 
 ### Pre-req
 - Install Python3
-- Download newsum
+- Download deep-news-summarization
 
 ```
 $ git clone https://github.com/hengluchang/deep-news-summarization.git
@@ -44,7 +44,7 @@ $ git clone https://github.com/hengluchang/deep-news-summarization.git
 $ pip install -r requirements.txt
 ```
 
-- Create two folders named "working_dir" and "output" under the newsum folder.
+- Create two folders named "working_dir" and "output" under the deep-news-summarization folder.
 
 ```
 $ cd deep-news-summarization
