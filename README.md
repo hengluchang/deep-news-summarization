@@ -97,6 +97,16 @@ $ python evaluation.py
 $ python execute.py
 ```
 
+## Try the local news summarization website
+- Install flask
+```
+$ pip install flask
+```
+- Run it!
+```
+$ python main.py
+```
+
 ## References
 - [Sequence-to-Sequence Models](https://www.tensorflow.org/tutorials/seq2seq/): TensorFlow's tutorial using seq2seq_model.py.
 - [Chatbots with Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/): I adpoted most of the code from this blog.
