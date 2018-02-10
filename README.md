@@ -97,7 +97,7 @@ $ python evaluation.py
 $ python execute.py
 ```
 
-## Try the local news summarization website
+## Try the news summarization website
 - Install flask
 ```
 $ pip install flask
