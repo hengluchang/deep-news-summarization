@@ -48,7 +48,7 @@ if __name__ == "__main__":
         # DESTINATION FILE ON YOUR DISK
         destination_folder = sys.argv[1]
         for file_name, file_id in file_ids.items():
-            destination = destination_folder + file_name
+            destination = destination_folder + '/' + file_name
             print ('Downloading {} ...'.format(file_name))
             download_file_from_google_drive(file_id, destination)
 
