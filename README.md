@@ -104,3 +104,8 @@ $ python execute.py
 - [Generating News Headlines with Recurrent Neural Networks](https://arxiv.org/abs/1512.01712): A related work in generating news haedlines.
 - [Evaluation and preplexity](https://www.youtube.com/watch?v=OHyVNCvnsTo): A youtube video explaining preplexity.
 - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/): A blog explaning LSTM.
+
+## Research Paper References
+- [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
+- [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/pdf/1409.0473.pdf)
