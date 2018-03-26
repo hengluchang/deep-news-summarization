@@ -1,4 +1,4 @@
-tensorflow==0.12
+tensorflow==0.12.1
 numpy
 pandas
 nltk
